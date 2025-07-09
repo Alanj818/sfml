@@ -120,18 +120,21 @@ int main()
                     const float Ty = target.getPosition().y; 
                     const float Tw = target.getSize().x;
                     const float Th = target.getSize().y;
-                //this is for the top side 
-
+                    float pyth = 0.f;
+                    float sDistx = 0.f;
+                    float sDisty = 0.f;
+                    
+                //this is for the top side    
                     if(Sy > Ty + Th){
                             //this is for the left top corner
                         if(Sx > (Tx + Tw)){
                             //handle the collision
                             std::cout << "This is the top Left" << std::endl;
-                            //the plan is to get the diagonal distance of the square
+                            //the plan is to get the diagonal distance(pythagoras theorem) of the square
                             //and compare it to the distance from the closest corner 
                             //of the target and the farthest corner of the rectangle
                             /*Look at your notes if you get lost*/
-                            
+
                         } 
 
                         //this is for the right top corner
